@@ -25,6 +25,15 @@
 @media(max-width:900px){.manual-grid{grid-template-columns:1fr;gap:30px}.manual-cover{max-width:265px}.manual-text{text-align:center}.manual-text p{margin-left:auto;margin-right:auto}.manual-details,.manual-actions{justify-content:center}}
 @media(max-width:600px){.manual-cover:after{right:-8px}.manual-actions .btn,.manual-actions .manual-outline{width:100%}}
 
+
+/* Botao adicional para download do manual, ao lado da opcao de baixar o jogo. */
+.download-manual-divider{height:1px;background:rgba(255,255,255,.22);margin:24px 0 20px}
+.download-manual-title{font-size:19px;font-weight:850;margin:0 0 7px;color:#fff}
+.download-manual-description{font-size:13px!important;line-height:1.6!important;color:#d2eee4!important;margin:0 0 10px}
+.download-manual-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:2px solid rgba(255,255,255,.7);border-radius:15px;background:#fff5d9;color:#07372f;font-weight:850;padding:15px 18px;transition:transform .2s,background .2s}
+.download-manual-btn:hover{transform:translateY(-2px);background:#fff}
+.download-manual-btn:focus-visible{outline:3px solid #ffcb60;outline-offset:4px}
+
 </style>
 </head>
 <body>
@@ -56,7 +65,12 @@
   </div>
 </section>
 
-<section class="section download-section" id="baixar"><div class="wrap download-grid"><div><span class="kicker">Pronto para jogar?</span><h2>Sua lanchonete está esperando por você.</h2><p>Prepare os melhores sucos da Amazônia e transforme cada comanda em uma conquista. Instale o Quí-Suco em seu dispositivo Android e comece a jogar!</p><p>🍊 Cupuaçu · Taperebá · Camu-camu · Açaí · Bacuri e muito mais.</p></div><div class="download-box"><div class="android">🤖</div><h3>QUÍ-SUCO para Android</h3><p>Arquivo APK para instalação direta no celular. Versão de teste disponibilizada pelo desenvolvedor.</p><a class="btn" id="downloadapk" href="./Qui-Suco-debug.apk" download="Qui-Suco-debug.apk">↓ BAIXAR JOGO (.APK)</a><p class="tiny">Android · APK de teste (debug) · Aproximadamente 56 MB</p></div></div></section>
+<section class="section download-section" id="baixar"><div class="wrap download-grid"><div><span class="kicker">Pronto para jogar?</span><h2>Sua lanchonete está esperando por você.</h2><p>Prepare os melhores sucos da Amazônia e transforme cada comanda em uma conquista. Instale o Quí-Suco em seu dispositivo Android e comece a jogar!</p><p>🍊 Cupuaçu · Taperebá · Camu-camu · Açaí · Bacuri e muito mais.</p></div><div class="download-box"><div class="android">🤖</div><h3>QUÍ-SUCO para Android</h3><p>Arquivo APK para instalação direta no celular. Versão de teste disponibilizada pelo desenvolvedor.</p><a class="btn" id="downloadapk" href="./Qui-Suco-debug.apk" download="Qui-Suco-debug.apk">↓ BAIXAR JOGO (.APK)</a><p class="tiny">Android · APK de teste (debug) · Aproximadamente 56 MB</p>
+<div class="download-manual-divider" aria-hidden="true"></div>
+<h4 class="download-manual-title">📖 Manual do Jogador</h4>
+<p class="download-manual-description">Guia ilustrado com instruções de todas as etapas do Quí-Suco. Baixe gratuitamente em PDF.</p>
+<a class="download-manual-btn" href="#manual_do_jogador" data-manual-action="download" download="manual_do_jogador.pdf" aria-label="Baixar o Manual do Jogador do Quí-Suco em PDF">↓ BAIXAR MANUAL DO JOGADOR (.PDF)</a>
+</div></div></section>
 <section class="section" id="duvidas"><div class="wrap"><div class="section-head"><span class="kicker">Perguntas frequentes</span><h2>Antes de começar.</h2></div><div class="faq"><details><summary>O Quí-Suco é gratuito?</summary><p>Sim. O arquivo APK disponibilizado nesta página pode ser baixado gratuitamente.</p></details><details><summary>Como instalar o arquivo no Android?</summary><p>Baixe o APK no celular, abra o arquivo baixado e siga as instruções do Android. Se o sistema pedir autorização para instalar aplicativos dessa origem, confira se o arquivo veio desta página oficial antes de concedê-la. Como esta é uma versão debug, o Android poderá exibir avisos de segurança.</p></details><details><summary>Posso jogar no iPhone ou no computador?</summary><p>O download disponível nesta página é um APK para Android. Não há aqui uma versão para iOS ou para computador.</p></details><details><summary>O que vou aprender?</summary><p>Concentração comum de soluções (C = m/V), conversão de mL para L, cálculo de massa, medição de volumes e procedimentos de pesagem.</p></details></div></div></section>
 </main>
 <footer><div class="wrap foot"><div><div class="logo"><span class="logo-mark">🍹</span>QUÍ-<em>SUCO</em></div><p>A química tem sabor. A educação ganha vida.</p></div><div><strong>Feito para aprender jogando.</strong><p>© <span id="year">2026</span> QUÍ-SUCO.</p></div></div></footer>
